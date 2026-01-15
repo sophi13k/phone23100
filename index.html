@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин телефонів</title>
+
+  <!-- Підключення стилів -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Верхній блок -->
+  <header>
+    <!-- свій логотип постав у файл logo.png -->
+    <img src="logo.png" alt="Логотип компанії">
+    <h1>Наш магазин телефонів</h1>
+    <p>Нові та б/у телефони</p>
+  </header>
+
+  <!-- Основний контент -->
+  <main class="container">
+    <h2>Наші пропозиції</h2>
+
+    <!-- Кнопки фільтра -->
+    <div class="filter">
+      <button onclick="showAll()">Всі</button>
+      <button onclick="showNew()">Нові</button>
+      <button onclick="showUsed()">Б/У</button>
+    </div>
+
+    <!-- Товари -->
+    <div class="grid">
+
+      <div class="card new">
+        <img src="фото/9ff5b2dc6974fb65de869d2dd4235d138227345c_original.jpeg" alt="iPhone 13">
+        <h3>iPhone 13</h3>
+        <span class="badge new-badge">Новий</span>
+        <p>Ціна: 25 000 грн</p>
+      </div>
+
+      <div class="card used">
+        <img src="фото/images (1).jfif" alt="Samsung S21">
+        <h3>Samsung S21</h3>
+        <span class="badge used-badge">Б/У</span>
+        <p>Ціна: 14 500 грн</p>
+      </div>
+
+      <div class="card new">
+        <img src="фото/images.jfif" alt="Xiaomi Redmi Note 11">
+        <h3>Xiaomi Redmi Note 11</h3>
+        <span class="badge new-badge">Новий</span>
+        <p>Ціна: 9 999 грн</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Нижня інформація -->
+  <footer>
+    <p>Контакти: +38 (000) 000-00-00</p>
+    <p>Адреса: м. Ваше місто, вул. Прикладна, 1</p>
+    <p>Графік роботи: Пн–Нд 09:00–19:00</p>
+  </footer>
+
+  <!-- Підключення JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
